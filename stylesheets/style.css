@@ -1,22 +1,12 @@
 
+/*осн*/
 @import "reset.css";
 @import "https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,400i,700,700i&subset=cyrillic";
-
 @import "social-likes_birman.css";
 
 @import "layout.css";
+@import "typography.css";
 @import "menubar.css";
-@import "share.css";
-@import "ul.css";
 
 /*landing*/
 @import "landing.css";
-
-/*posts*/
-@import "posts.css";
-
-/*post*/
-@import "sidebar.css";
-@import "content.css";
-@import "gallery.css";
-@import "responsive.css";
