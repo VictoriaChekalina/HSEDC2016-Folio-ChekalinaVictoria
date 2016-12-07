@@ -1,5 +1,5 @@
 
-* {
+*  {
   box-sizing: border-box;
 }
 
@@ -15,11 +15,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.posts {
+body.landing {
   background-color: #FAFAFA;
 }
 
-body.posts .menubar,
 body.landing .menubar {
   position: fixed;
   top: 0;
@@ -27,6 +26,9 @@ body.landing .menubar {
   z-index: 1;
   width: 100%;
   min-width: 768px;
+}
+
+body.landing .menubar div {
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
 }

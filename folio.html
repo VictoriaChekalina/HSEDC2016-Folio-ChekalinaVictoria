@@ -1,115 +1,136 @@
+
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>Folio - своё портфолио своими руками</title>
+    <title>Folio — своё портфолио своими руками</title>
 
     <meta name="description" content="Шаблон сайта-портфолио, разработанный командой Hæd Exchange для обучения основам веб-вёрстки в рамках образовательного проекта Hack Exchange.">
-    <meta name="keywords" content"hack, exchange, html, css, javascript, hse, design">
+    <meta name="keywords" content="folio, html, css, javascripts, hse, design">
 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://folio.hack.exchange">
+    <meta property="og:title" content="Folio">
+    <meta property="og:description" content="Шаблон сайта-портфолио, разработанный командой Hæd Exchange для обучения основам веб-вёрстки в рамках образовательного проекта Hack Exchange.">
+    <meta property="og:image" content="http://folio.hack.exchange/images/share.png">
 
-
-    <link rel="icon" type="image/x-icon" href="">
-    <link rel="icon" type="image/png" href="images/icon/apple-touch-icon.png">
-
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico" />
+    <link rel="icon" type="image/png" href="favicon (1).png" />
 
     <link rel="stylesheet" href="stylesheets/style.css">
-    <script src="javascripts/jquery-3.1.1.js"></script>
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
     <script src="javascripts/social-likes.min.js"></script>
 
-    <style media="screen">
-      body {
-        width: 1440px;
-        height: 3200px;
-        margin: 0 auto;
-        background-image: url(images/mockups/1440.png);
-        background-size: 1440px 3200px;
-        background-position: top center;
-        background-repeat: no-repeat;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-      }
-    </style>
-
   </head>
-  <body class="landing">
+
+  <body class="landing bg">
+    <nav class="menubar">
+      <div>
+      <a class="logo" url(../images/logo.svg)></a>
+      </div>
+    </nav>
 
     <section class="landingWrapper">
-      <section class="sectionLeft">
+      <section class="mainSection left">
         <section>
-
-          <h2>Своё портфолио <br>
-            своими руками
+          <h2>
+            Своё портфолио<br>
+            своими руками.
           </h2>
 
-            <p>Шаблон сайта-портфолио, разработанный <br>
-              командой Hæd Exchange для обучения основам <br>
-              веб-вёрстки в рамках образовательного проекта <br>
-              Hack Exchange.
-            </p>
+          <p>
+            Шаблон сайта-портфолио, разработанный<br>
+            командой Hæd Exchange для обучения основам<br>
+            веб-вёрстки в рамках образовательного проекта<br>
+            Hack Exchange.
+          </p>
 
+          <figure></figure>
         </section>
 
-      <section class="sectionRight">
-        <section>
+        <figure class="mockup" id="mockup1"></figure>
+      </section>
 
-          <h2>Всё необходимое <br>
+      <section class="mainSection right">
+        <section>
+          <h2>
+            Всё необходимое<br>
             в одном шаблоне.
           </h2>
 
-          <p>Шаблон состоит из типовых страниц: о себе, <br>
-            портфолио работ, контакты. Кастомизация и <br>
+          <p>
+            Шаблон состоит из типовых страниц: о себе,<br>
+            портфолио работ, контакты. Кастомизация и<br>
             дополнения остаются за вами.
           </p>
 
+          <figure></figure>
         </section>
+
+        <figure class="mockup" id="mockup2_1"></figure>
+        <figure class="mockup" id="mockup2_2"></figure>
+        <figure class="mockup" id="mockup2_3"></figure>
       </section>
 
-      <section class="sectionLeft">
+      <section class="mainSection left">
         <section>
 
-          <h2>Адаптирован под <br>
+          <h2>
+            Адаптирован под<br>
             все экраны.
           </h2>
 
-          <p>Шаблон хорошо смотрится на компьютерах, <br>
-            планшетах и смартфонах. Не достаёт только версий <br>
+          <p>
+            Шаблон хорошо смотрится на компьютерах,<br>
+            планшетах и смартфонах. Не достаёт только версий<br>
             для телефизора и часов.
           </p>
 
+          <figure></figure>
         </section>
+
+        <figure class="mockup" id="mockup3"></figure>
       </section>
 
-      <section class="sectionCenter">
+      <section class="mainSection center">
         <section>
-          <h2>Возможность самостоятельного <br>
+
+          <h2>
+            Возможность самостоятельного <br>
             и курируемого обучения.
           </h2>
 
-          <p>Вы можете обучаться самостоятельно по исходному коду проекта, <br>
-            выложенному на GitHub, или записаться на курс “Основы <br>
-            веб-вёрстки с Захаром Днём” на Hack Exchange.
+          <p>
+            Вы можете обучаться самостоятельно по исходному<br class="compact">
+            коду проекта,<br class="full">
+            выложенному на GitHub, или записаться<br class="compact">
+            на курс “Основы<br class="full">
+            веб-вёрстки с Захаром Днём”<br class="compact">
+            на Hack Exchange.
           </p>
 
           <nav>
-            <a class="small white btn" href="https://github.com/digitalkill3rrr/HSEDC2016-Folio-digitalkill3rrr">Исходный код на GitHub</a>
-            <a class="big blue btn" href="http://lessons.hack.exchange">Курс на Hack Exchange</a>
+            <a class="btn large blue" href="http://lessons.hack.exchange">Курс на Hack Exchange</a> <br>
+            <a class="btn small white" href="https://github.com/Nastysha150698/HSEDC2016-Folio-Nastysha150698">Исходный код на GitHub</a>
           </nav>
+
         </section>
 
         <footer>
           <p>Пожалуйста, поделитесь знаниями с друзьями</p>
 
-          <div class="social-likes social-likes_single" data-url="" data-single-title="Поделиться">
+          <div class="social-likes social-likes_single" data-url="http://wikimedium.hack.exchange" data-single-title="Share">
             <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
             <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
             <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
           </div>
         </footer>
+
       </section>
     </section>
-  </section>
 
   </body>
 </html>
