@@ -1,8 +1,44 @@
 
  /*bg*/
 
+
+ *  {
+   box-sizing: border-box;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ body {
+   min-width: 768px;
+   font-family: 'PT Sans', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ body.landing {
+   background-color: #FAFAFA;
+ }
+
+ body.landing .menubar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 100%;
+   min-width: 768px;
+ }
+
+ body.landing .menubar div {
+   background-color: white;
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+ }
+
+
 body.landing.bg {
-  background-image: url(../images/landing/1440.png);
+  background-image: url(../images/landing/1440.png)
   background-repeat: no-repeat;
   background-position: top center;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
@@ -37,11 +73,14 @@ body.landing .menubar div {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-  background-color: white;
+  /*background-color: white;*/
 }
+
+/*mainsections*/
 
 .mainSection {
   position: relative;
@@ -72,7 +111,7 @@ body.landing .menubar div {
 .mainSection.center,
 .mainSection.right {
   color: white;
-  background-color: #879696;
+  /*background-color: #879696;*/
 }
 
 .mainSection.center h2{
@@ -137,6 +176,9 @@ body.landing .menubar div {
   font-size: 16px;
 }
 
+
+/*mockups*/
+
 #mockup1 {
   top: 233px;
   right: 159px;
@@ -180,4 +222,295 @@ body.landing .menubar div {
   height: 404px;
   border-radius: 5px;
   background-image: url(../images/screens.png);
+}
+
+/*mediascreens*/
+@media screen and (max-width: 1440px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  body.landing.bg {
+    background-image: url(../images/landing/1180.png);
+  }
+
+  .mainSection {
+    position: relative;
+    width: 1180px;
+    height: 568px;
+    overflow: hidden;
+    }
+
+    .mainSection section {
+    width: 410px;
+    top: 136px;
+  }
+
+  .mainSection  h2 {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    margin-top: 46px;
+  }
+
+  .mainSection  p {
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 26px;
+    width: 338px;
+  }
+
+  .mainSection.center h2{
+    font-size: 30px;
+    margin-top:-45px;
+    line-height: 39px;
+  }
+
+  .mainSection.center  p {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 359px;
+    width: 467px;
+  }
+
+  .mainSection.center section {
+    top: 182px;
+    width: 100%;
+  }
+
+  .mainSection section {
+    position: absolute;
+    top: 91px;
+    width: 580px;
+  }
+
+  .mainSection.left section {
+    left: 191px;
+    top: 91px;
+  }
+
+
+  .mainSection.right section {
+    right: -45px;
+    top: 91px;
+  }
+
+
+  .mainSection section figure {
+    width: 22px;
+    height: 3px;
+    margin-top: 41px;
+    background-image: url(../images/pattern.png);
+  }
+
+
+  .mainSection.left section figure {
+    margin-left: 0px;
+  }
+
+  .mockup {
+    position: absolute;
+    background-size: cover;
+  }
+
+
+  .mainSection.center footer {
+    /*position: absolute;*/
+    /*bottom: 0;
+    right: 0;*/
+    width: 100%;
+    padding-bottom: 35px;
+  }
+
+  .mainSection.center footer p {
+   margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  #mockup1 {
+    top: 167px;
+    right: 193px;
+    width: 376px;
+    height: 443px;
+  }
+
+  #mockup2_1 {
+    top: 138px;
+    left: 437px;
+    width: 100px;
+    height: 339px;
+  }
+
+  #mockup2_2 {
+    top: 138px;
+    left: 315px;
+    width: 100px;
+    height: 283px;
+    }
+
+  #mockup2_3 {
+    top: 138px;
+    left: 191px;
+    width: 100px;
+    height: 227px;
+  }
+
+  #mockup3 {
+    top: 243px;
+    right: 108px;
+    width: 540px;
+    height: 285px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  body.landing.bg {
+  background-image: url(../images/landing/840.png);
+}
+
+.mainSection {
+  position: relative;
+  width: 840px;
+  height: 568px;
+  overflow: hidden;
+}
+
+.mainSection {
+  position: relative;
+  width: 768px;
+  height: 1024px;
+  overflow: hidden;
+  }
+
+.mainSection  h2 {
+  font-size: 30px;
+  line-height: 39px;
+  margin-top: 46px;
+  margin-left: -55px;
+}
+
+.mainSection  p {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 366px;
+  margin-left: -54px;
+}
+
+.mainSection.center {
+  text-align: center;
+}
+
+.mainSection.center,
+.mainSection.right {
+  color: white;
+  background-color: #879696;
+}
+
+.mainSection.center h2 {
+  font-size: 30px;
+  margin-top: 5px;
+  line-height: 39px;
+  margin-left: -1px;
+}
+
+.mainSection.center  p {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 152px;
+  width: 468px;
+}
+
+.mainSection.center section {
+  top: 182px;
+  width: 100%;
+}
+
+.mainSection section {
+  position: absolute;
+  top: 147px;
+  width: 580px;
+}
+
+.mainSection.left section {
+  left: 168px;
+}
+
+
+.mainSection.right section {
+  right: -178px;
+}
+
+
+.mainSection section figure {
+  width: 22px;
+  height: 3px;
+  margin-top: 42px;
+  margin-left: -54px;
+}
+.mainSection.left section figure {
+  margin-left: -54px;
+}
+
+.mockup {
+  position: absolute;
+  background-size: cover;
+}
+
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.mainSection.center footer p {
+  font-size: 13px;
+  margin-bottom: -12px;
+  margin-left: 150px;
+}
+
+#mockup1 {
+  top: 483px;
+  right: 115px;
+  width: 541px;
+  height: 660px;
+}
+
+#mockup2_1 {
+  top: 456px;
+  left: 484px;
+  width: 140px;
+  height: 475px;
+}
+
+#mockup2_2 {
+  top: 456px;
+  left: 311px;
+  width: 140px;
+  height: 396px;
+  }
+
+#mockup2_3 {
+  top: 456px;
+  left: 139px;
+  width: 139px;
+  height: 317px;
+}
+
+#mockup3 {
+  top: 505px;
+  right: -113px;
+
+  width: 761px;
+  height: 404px;
+  border-radius: 5px;
 }

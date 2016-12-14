@@ -25,3 +25,14 @@
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1179px){
+  .menubar div {
+    height: 20px;
+  }
+
+  .logo {
+    width: 58px;
+    height: 17px;
+  }
+}
