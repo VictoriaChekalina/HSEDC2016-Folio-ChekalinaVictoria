@@ -14,8 +14,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 20px;
-  padding: 30px;
+  height: 60px;
+  padding: 5px;
 }
 
 .logo {
@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 1179px){
   .menubar div {
-    height: 20px;
+    height: 42px;
   }
 
   .logo {
