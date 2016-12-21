@@ -368,16 +368,16 @@ body.landing .menubar div {
   .mainSection {
     position: relative;
     width: 840px;
-    height: 568px;
+    height: 1024px;
     overflow: hidden;
   }
 
-  .mainSection {
+  /*.mainSection {
     position: relative;
     width: 768px;
     height: 1024px;
     overflow: hidden;
-  }
+  }*/
 
   .mainSection  h2 {
     font-size: 30px;
@@ -415,7 +415,7 @@ body.landing .menubar div {
     margin-top: 18px;
     font-size: 16px;
     line-height: 26px;
-    margin-left: 152px;
+    margin-left: 184px;;
     width: 468px;
   }
 
@@ -446,6 +446,7 @@ body.landing .menubar div {
     margin-top: 42px;
     margin-left: -54px;
   }
+
   .mainSection.left section figure {
     margin-left: -54px;
   }
@@ -466,14 +467,14 @@ body.landing .menubar div {
   .mainSection.center footer p {
     font-size: 13px;
     margin-bottom: 13px;
-    margin-left: 150px;
+    margin-left: 185px
   }
 
   #mockup1 {
     top: 483px;
-    right: 115px;
+    right: 138px;
     width: 541px;
-      height: 660px;
+    height: 660px;
   }
 
   #mockup2_1 {
@@ -504,6 +505,7 @@ body.landing .menubar div {
     height: 404px;
     border-radius: 5px;
   }
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -523,7 +525,8 @@ body.landing .menubar div {
     background-image: url(../images/work@2.png);
   }
 
-
   #mockup-5 {
     background-image: url(../images/screens@2.png);
   }
+
+}
